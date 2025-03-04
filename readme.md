@@ -10,7 +10,7 @@ NutriWise is an intelligent meal planning application that provides personalized
 ## Installation & Setup
 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/NutriWise.git
+git clone https://https://github.com/shreymadd/Nutriwise-Data-Driven-_Meal_Planner
 cd NutriWise
 ```
 2. Create a Virtual Environment (Recommended)
