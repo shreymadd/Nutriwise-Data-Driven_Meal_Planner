@@ -10,29 +10,59 @@ GMM-Based Clustering (Optional Visualization) – Uses Gaussian Mixture Models (
 Modular & Maintainable Codebase – Structured into separate modules for data processing, recommendations, GUI, and visualization.
 Installation & Setup
 1. Clone the Repository
-''' bash git clone https://github.com/yourusername/NutriWise.git cd NutriWise '''
-
+```bash
+git clone https://github.com/yourusername/NutriWise.git
+cd NutriWise
+```
 2. Create a Virtual Environment (Recommended)
-''' bash python -m venv .venv
+```bash
+python -m venv .venv
+For Windows:
 
-Windows
-..venv\Scripts\activate
+bash
+Copy
+Edit
+.\.venv\Scripts\activate  
+For macOS/Linux:
 
-OR macOS/Linux
-source .venv/bin/activate
-'''
-
+bash
+Copy
+Edit
+source .venv/bin/activate  
 3. Install Dependencies
-''' bash pip install -r requirements.txt '''
-
+bash
+Copy
+Edit
+pip install -r requirements.txt
 How to Run the Application
 Run the Main File
 After setting up, start the GUI by running:
-''' bash python main.py '''
 
+bash
+Copy
+Edit
+python main.py
 Project Structure
-''' plaintext NutriWise/ │-- Data/ │ └── Updated_500_Indian_Food_Nutritional_Data.xlsx │-- modules/ │ │-- init.py # Makes the directory a package │ │-- data_preprocessing.py # Loads and cleans dataset │ │-- recommendation.py # BMR calculation & meal recommendation logic │ │-- gui.py # Tkinter GUI interface │ │-- graph.py # GMM visualization │-- tests/ # (Optional) Unit tests │ │-- test_data_preprocessing.py │ │-- test_recommendation.py │-- main.py # Entry point of the application │-- README.md # Documentation │-- requirements.txt # List of dependencies │-- .gitignore # Files to be ignored in Git │-- LICENSE # License file (if applicable) '''
-
+plaintext
+Copy
+Edit
+NutriWise/
+│-- Data/
+│   └── Updated_500_Indian_Food_Nutritional_Data.xlsx
+│-- modules/
+│   │-- __init__.py               # Makes the directory a package
+│   │-- data_preprocessing.py      # Loads and cleans dataset
+│   │-- recommendation.py          # BMR calculation & meal recommendation logic
+│   │-- gui.py                     # Tkinter GUI interface
+│   │-- graph.py                    # GMM visualization
+│-- tests/                          # (Optional) Unit tests
+│   │-- test_data_preprocessing.py
+│   │-- test_recommendation.py
+│-- main.py                         # Entry point of the application
+│-- README.md                        # Documentation
+│-- requirements.txt                  # List of dependencies
+│-- .gitignore                        # Files to be ignored in Git
+│-- LICENSE                           # License file (if applicable)
 Usage Guide
 1. Enter User Details
 Age, Height, Weight, Gender
@@ -54,18 +84,38 @@ Tabulate – Formatting output in tables
 Troubleshooting & Common Issues
 Matplotlib Not Found
 If you see:
-''' plaintext ModuleNotFoundError: No module named 'matplotlib' ''' Install it manually:
-''' bash pip install matplotlib '''
 
+plaintext
+Copy
+Edit
+ModuleNotFoundError: No module named 'matplotlib'
+Install it manually:
+
+bash
+Copy
+Edit
+pip install matplotlib
 Tkinter Issues (Linux Users)
 If Tkinter isn't installed:
-''' bash sudo apt-get install python3-tk '''
 
+bash
+Copy
+Edit
+sudo apt-get install python3-tk
 Module Import Errors
 If you see:
-''' plaintext ModuleNotFoundError: No module named 'modules' ''' Ensure you’re running Python inside the project folder:
-''' bash cd NutriWise python main.py '''
 
+plaintext
+Copy
+Edit
+ModuleNotFoundError: No module named 'modules'
+Ensure you’re running Python inside the project folder:
+
+bash
+Copy
+Edit
+cd NutriWise
+python main.py
 License
 This project is licensed under the MIT License – you are free to use and modify it.
 
