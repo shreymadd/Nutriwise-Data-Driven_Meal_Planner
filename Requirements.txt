@@ -1,6 +1,14 @@
+fastapi
+uvicorn
+python-dotenv
 pandas
 numpy
 scikit-learn
+pydantic
+psycopg2-binary
+sqlalchemy
+python-multipart
 matplotlib
 tabulate
 openpyxl
+joblib
