@@ -1,11 +1,44 @@
 # Ignore virtual environment
-../.venv/
+.venv/
+venv/
 
 # Ignore compiled Python files
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Testing / coverage / caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# Frontend (Vite / Node)
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+dist/
+
+# Model artifacts
+gmm_model.pkl
